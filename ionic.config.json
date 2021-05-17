@@ -1,0 +1,7 @@
+{
+  "name": "Battute squallide",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
