@@ -34,17 +34,13 @@ export default defineComponent({
 
 
 }); 
-created(){
 
-}
+
+
 </script>
 
-<<<<<<< HEAD
 
 
 <style scoped>
 
 </style>
-=======
-<style scoped></style>
->>>>>>> 8aac4b8817104960e1de18b60d852b862ed1c600

@@ -1,4 +1,5 @@
 <template>
+
   <ion-page>
     <ion-header>
       <ion-toolbar>
@@ -7,6 +8,9 @@
     </ion-header>
 
     <ion-content>
+       <ion-searchbar>
+ 
+      </ion-searchbar>
       <ion-title>Coap</ion-title>
     </ion-content>
   </ion-page>
@@ -20,7 +24,10 @@ import {
     IonBackButton,
     IonPage,
     IonHeader,
-    IonToolbar
+    
+
+    IonSearchbar,
+    IonToolbar 
 } from '@ionic/vue';
 
 import { defineComponent } from 'vue';
@@ -33,7 +40,12 @@ export default defineComponent({
         IonBackButton,
         IonPage,
         IonHeader,
-        IonToolbar
+    
+       
+        
+        IonSearchbar,
+        IonToolbar 
+
   }
 });
 </script>
