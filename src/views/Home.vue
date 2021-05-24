@@ -7,22 +7,19 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-header>
-        <ion-toolbar>
-          <ion-title>sd</ion-title>
-        </ion-toolbar>
-      </ion-header>
+      <ion-button router-link='/page'>Page</ion-button>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="js">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton} from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
+    IonButton,
     IonContent,
     IonHeader,
     IonPage,
