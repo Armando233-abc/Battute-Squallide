@@ -15,7 +15,10 @@
     
     </ion-content>
   </ion-page>
+ 
+  
 </template>
+
 
 <script lang="js">
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
@@ -29,9 +32,18 @@ export default defineComponent({
     IonPage,
     IonTitle,
     IonToolbar
+  
+
   }
-});
+
+
+}); 
+created(){
+
+}
 </script>
+
+
 
 <style scoped>
 
