@@ -5,12 +5,16 @@ const store = createStore({
         return {
             buttons: [
                 {
-                  id: 'normal_jokes',
-                  title: 'Battute Squallide'
+                  id: 'puns_jokes',
+                  title: 'Freddure'
                 },
                 {
                   id: 'black_jokes',
                   title: 'Black Humor'
+                },
+                {
+                    id: 'normal_jokes',
+                    title: 'Barzellette'
                 },
             ]
         }
