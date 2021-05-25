@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import Home from '../views/Home.vue'
-import Page from '../views/defaultLeyout.vue'
+import jokesArea from '../views/jokesArea.vue'
 
 const routes = [
   {
@@ -12,12 +12,12 @@ const routes = [
     component: Home
   },
   {
-    path: '/page',
-    component: Page
+    path: '/jokesArea',
+    component: jokesArea
   },
   {
-    path: '/page/:id',
-    component: () => import('../views/defaultLeyout.vue')
+    path: '/jokesArea/:id',
+    component: () => import('../views/jokesArea.vue')
   }
 ]
 

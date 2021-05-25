@@ -3,7 +3,10 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-back-button></ion-back-button>
+        <ion-buttons slot="start">
+            <ion-back-button default-href="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{ pageTitle }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
@@ -11,7 +14,7 @@
        <ion-searchbar>
  
       </ion-searchbar>
-      <ion-title>Coap</ion-title>
+      
     </ion-content>
   </ion-page>
   
@@ -24,28 +27,24 @@ import {
     IonBackButton,
     IonPage,
     IonHeader,
-    
-
     IonSearchbar,
-    IonToolbar 
+    IonToolbar,
+    IonButtons
 } from '@ionic/vue';
 
 import { defineComponent } from 'vue';
-
 export default defineComponent({
   name: 'Page',
+  props: ['pageTitle'],
   components: {
         IonContent,
         IonTitle,
         IonBackButton,
         IonPage,
         IonHeader,
-    
-       
-        
         IonSearchbar,
-        IonToolbar 
-
+        IonToolbar,
+        IonButtons
   }
 });
 </script>
