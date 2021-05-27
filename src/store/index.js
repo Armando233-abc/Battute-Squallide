@@ -11,11 +11,7 @@ const store = createStore({
                 {
                   id: 'black_jokes',
                   title: 'Black Humor'
-                },
-                {
-                    id: 'normal_jokes',
-                    title: 'Barzellette'
-                },
+                }
             ]
         }
     },
