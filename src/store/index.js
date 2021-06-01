@@ -5,22 +5,14 @@ const store = createStore({
         return {
             buttons: [
                 {
-<<<<<<< HEAD
+                
                   id: 'normal_jokes',
                   title: 'Battute Squallide'
-=======
-                  id: 'puns_jokes',
-                  title: 'Freddure'
->>>>>>> 8f8e4051017961558b87210f9270ed477ee4e8ba
                 },
                 {
                   id: 'black_jokes',
                   title: 'Black Humor'
-<<<<<<< HEAD
-                },
-=======
                 }
->>>>>>> 8f8e4051017961558b87210f9270ed477ee4e8ba
             ]
         }
     },
