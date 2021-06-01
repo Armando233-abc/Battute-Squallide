@@ -2,26 +2,32 @@
 
   <ion-page>
     <ion-header>
-      
+
       <ion-toolbar>
-        
-        <ion-buttons slot="start">
+        <ion-buttons>
             <ion-back-button default-href="/home"></ion-back-button>
         </ion-buttons>
-        
+
         <ion-title>{{ pageTitle }}</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
-       <ion-searchbar>
- 
-      </ion-searchbar>
+
+      <ion-searchbar 
+        animated
+        placeholder="Inserisci parole chivi"
+      ></ion-searchbar>
       
     </ion-content>
   </ion-page>
 
 </template>
+
+
+
+
+
 
 
 <script lang="js">
@@ -34,6 +40,8 @@ import {
     IonSearchbar,
     IonToolbar,
     IonButtons
+
+
 } from '@ionic/vue';
 
 import { defineComponent } from 'vue';
@@ -52,4 +60,3 @@ export default defineComponent({
   }
 });
 </script>
-

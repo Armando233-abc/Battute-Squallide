@@ -19,7 +19,5 @@ export default {
             this.buttonId = currentRoute.params.id
         }
     }
-
-  
 };
 </script>

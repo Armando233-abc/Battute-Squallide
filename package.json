@@ -25,7 +25,11 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-unit-jest": "~4.5.0",
+<<<<<<< HEAD
     "@vue/cli-service": "4.5.13",
+=======
+    "@vue/cli-service": "~4.5.0",
+>>>>>>> 8f8e4051017961558b87210f9270ed477ee4e8ba
     "@vue/compiler-sfc": "^3.0.0-0",
     "@vue/test-utils": "^2.0.0-0",
     "eslint": "^6.7.2",

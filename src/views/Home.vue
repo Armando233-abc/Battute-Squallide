@@ -1,4 +1,6 @@
-s<template>
+
+<template>
+
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
@@ -8,7 +10,6 @@ s<template>
 
     <ion-content :fullscreen="true">
       <ion-list>
-       
         <ion-button
           v-for="button in buttons"
           :router-link="`/jokesArea/${button.id}`"
@@ -16,11 +17,12 @@ s<template>
         >
         {{ button.title }}
         </ion-button>
-       
+
       </ion-list>
     </ion-content>
   </ion-page>
 </template>
+
 
 <style scoped>
 @import "../theme/index.css";
