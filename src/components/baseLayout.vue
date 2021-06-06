@@ -17,18 +17,14 @@
       <ion-searchbar 
         animated
         placeholder="Inserisci parole chivi"
+        debounce="500"
+        @input="getData($event)"
       ></ion-searchbar>
       
     </ion-content>
   </ion-page>
 
 </template>
-
-
-
-
-
-
 
 <script lang="js">
 import {    
@@ -57,6 +53,12 @@ export default defineComponent({
         IonSearchbar,
         IonToolbar,
         IonButtons
+  },
+  methods: {
+    getData($event){
+      console.log($event.target.value);
+    } 
   }
+  
 });
 </script>
