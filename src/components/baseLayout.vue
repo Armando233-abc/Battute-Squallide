@@ -21,12 +21,18 @@
         @input="getData($event)"
       ></ion-searchbar>
       
+      <ion-list>
+          <ion-item v-for="(battuta) in listaBattute" :key="battuta">
+            {{ battuta }}
+          </ion-item>
+      </ion-list>
     </ion-content>
   </ion-page>
 
 </template>
 
 <script lang="js">
+import jsonData from '../jokes/jokes.json'
 import {    
     IonContent,
     IonTitle,
@@ -35,8 +41,9 @@ import {
     IonHeader,
     IonSearchbar,
     IonToolbar,
-    IonButtons
-
+    IonButtons,
+    IonList,
+    IonItem
 
 } from '@ionic/vue';
 
@@ -44,6 +51,12 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Page',
   props: ['pageTitle'],
+  data(){
+    return {
+      listaBattute: [],
+      x: this.pageTitle
+    }
+  },
   components: {
         IonContent,
         IonTitle,
@@ -52,11 +65,13 @@ export default defineComponent({
         IonHeader,
         IonSearchbar,
         IonToolbar,
-        IonButtons
+        IonButtons,
+        IonList,
+        IonItem
   },
   methods: {
     getData($event){
-      console.log($event.target.value);
+      $event.target.value === '' ? this.listaBattute = [] : this.listaBattute = jsonData[this.x].filter(battuta => battuta.includes($event.target.value))
     } 
   }
   
