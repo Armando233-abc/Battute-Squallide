@@ -72,6 +72,7 @@ export default defineComponent({
   methods: {
     getData($event){
       $event.target.value === '' ? this.listaBattute = [] : this.listaBattute = jsonData[this.x].filter(battuta => battuta.includes($event.target.value))
+      console.log(this.listaBattute);
     } 
   }
   
