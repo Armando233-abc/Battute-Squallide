@@ -71,10 +71,8 @@ export default defineComponent({
   },
   methods: {
     getData($event){
-      let newJsonData = [...new Map(jsonData[this.x].map(item => [item[key], item])).values()]
-      $event.target.value === '' ? this.listaBattute = [] : this.listaBattute = jsonData[this.x].filter(battuta => battuta.includes($event.target.value))
-      console.log($event.target.value === '')
-      console.log(this.listaBattute);
+      const xJsonData = [...new Set(jsonData[this.x])]
+      $event.target.value === '' ? this.listaBattute = [] : this.listaBattute = xJsonData.filter(battuta => battuta.includes($event.target.value))
     } 
   }
   
