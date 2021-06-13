@@ -22,7 +22,7 @@
       ></ion-searchbar>
       
       <ion-list>
-          <ion-item v-for="(battuta) in listaBattute" :key="battuta">
+          <ion-item v-for="(battuta, i) in listaBattute" :key="i">
             {{ battuta }}
           </ion-item>
       </ion-list>
@@ -71,7 +71,9 @@ export default defineComponent({
   },
   methods: {
     getData($event){
+      let newJsonData = [...new Map(jsonData[this.x].map(item => [item[key], item])).values()]
       $event.target.value === '' ? this.listaBattute = [] : this.listaBattute = jsonData[this.x].filter(battuta => battuta.includes($event.target.value))
+      console.log($event.target.value === '')
       console.log(this.listaBattute);
     } 
   }
