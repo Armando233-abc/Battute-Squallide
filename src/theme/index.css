@@ -1,6 +1,6 @@
 
 
-.ion-button {
+ion-button {
     border-color: #8e44ad;
     border-radius: 0;
     color: #8e44ad;
@@ -10,7 +10,7 @@
     -webkit-transition: color 150ms ease-in-out;
     transition: color 150ms ease-in-out;
 }
-.ion-button:after {
+ion-button:after {
     content: '';
     position: absolute;
     display: block;
@@ -25,10 +25,10 @@
     -webkit-transition: width 150ms ease-in-out;
     transition: width 150ms ease-in-out;
 }
-.ion-button:hover {
+ion-button:hover {
     color: #fff;
 }
-.ion-button:hover:after {
+ion-button:hover:after {
     width: 110%;
 }
 

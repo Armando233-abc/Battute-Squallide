@@ -14,6 +14,9 @@
           v-for="button in buttons"
           :router-link="`/jokesArea/${button.id}`"
           :key='button.id'
+          color="secondary"
+          size='default'
+          shape="round"
         >
         {{ button.title }}
         </ion-button>
@@ -24,9 +27,6 @@
 </template>
 
 
-<style scoped>
-@import "../theme/index.css";
-</style>
 
 <script lang="js">
 import { IonList, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton} from '@ionic/vue';

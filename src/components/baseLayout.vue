@@ -2,9 +2,8 @@
 
   <ion-page>
     <ion-header>
-
       <ion-toolbar>
-        <ion-buttons slot="start">
+        <ion-buttons>
             <ion-back-button default-href="/home"></ion-back-button>
         </ion-buttons>
 
@@ -47,7 +46,9 @@ import {
 
 } from '@ionic/vue';
 
-import { defineComponent } from 'vue';
+import { defineComponent} from 'vue';
+
+
 export default defineComponent({
   name: 'Page',
   props: ['pageTitle'],
