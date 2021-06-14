@@ -1,7 +1,8 @@
 
 
-.ion-button {
+ion-button {
     border-color: #8e44ad;
+    --background: #fff;
     border-radius: 0;
     color: #8e44ad;
     position: relative;
@@ -10,7 +11,7 @@
     -webkit-transition: color 150ms ease-in-out;
     transition: color 150ms ease-in-out;
 }
-.ion-button:after {
+ion-button:after {
     content: '';
     position: absolute;
     display: block;
@@ -20,25 +21,21 @@
             transform: translateX(-50%);
     width: 0;
     height: 100%;
-    background: #8e44ad;
     z-index: -1;
     -webkit-transition: width 150ms ease-in-out;
     transition: width 150ms ease-in-out;
 }
-.ion-button:hover {
+ion-button:hover {
     color: #fff;
+    --background: #8e44ad;
 }
-.ion-button:hover:after {
+ion-button:hover:after {
     width: 110%;
 }
 
-
-
 /*smartphone*/
 
-
 /*tablet*/
-
 
 /*pc*/
 
