@@ -35,8 +35,6 @@ ion-button:hover:after {
 
 /*smartphone*/
 
-/*tablet*/
-
-/*pc*/
-
-
+ion-pag{
+    --background: #8e44ad;
+}
