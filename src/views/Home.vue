@@ -23,9 +23,8 @@
   </ion-page>
 </template>
 
-
 <style scoped>
-@import "../theme/index.css";
+@import '../theme/index.css';
 </style>
 
 <script lang="js">
